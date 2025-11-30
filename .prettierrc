@@ -1,0 +1,22 @@
+{
+    "plugins": ["@prettier/plugin-php", "@awmottaz/prettier-plugin-void-html"],
+    "printWidth": 120,
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "endOfLine": "lf",
+    "overrides": [
+        {
+            "files": "**/*.php",
+            "options": {
+                "parser": "php",
+                "phpVersion": "8.2",
+                "braceStyle": "1tbs"
+            }
+        }
+    ]
+}

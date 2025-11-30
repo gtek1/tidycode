@@ -1,0 +1,15 @@
+{
+    "name": "tidycode",
+    "version": "1.0.0",
+    "private": true,
+    "devDependencies": {
+        "@awmottaz/prettier-plugin-void-html": "^1.9.0",
+        "@prettier/plugin-php": "^0.24.0",
+        "prettier": "^3.7.3"
+    },
+    "scripts": {
+        "format": "prettier --write \"**/*.{js,ts,jsx,tsx,html,css,scss,json,md,php}\"",
+        "format:check": "prettier --check \"**/*.{js,ts,jsx,tsx,html,css,scss,json,md,php}\"",
+        "cleanup": "rm -rf .cursorrules CLAUDE.md .editorconfig demo"
+    }
+}

@@ -1,0 +1,28 @@
+# Cursor AI Rules
+
+## Code Style
+
+- Always use 4 spaces for indentation
+- Keep blank lines minimal (speed over zero blank lines)
+- Keep code clean and self-documenting
+
+## CRITICAL: NO COMMENTS
+
+- NEVER add comments to code unless explicitly requested by the user
+- If comments already exist in code, preserve them
+- Code should be self-documenting with clear naming
+- Only add comments when user specifically asks for them
+
+## Response Style
+
+- Be concise and direct in all responses
+- Avoid verbose explanations unless explicitly requested
+- When unclear, ask questions first
+- Provide a short summarized plan before starting work
+- No unnecessary pleasantries or filler content
+
+## Formatting
+
+- All code must be properly formatted on save
+- Follow project's Prettier configuration
+- Maintain consistency across all file types

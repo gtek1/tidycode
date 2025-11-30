@@ -1,0 +1,73 @@
+$primary-color: #00a8e8;
+$secondary-color: #003d5b;
+$text-color: #333333;
+$border-radius: 8px;
+$spacing: 20px;
+.theme {
+&-header {
+background-color: $primary-color;
+padding: $spacing * 2;
+border-radius: $border-radius;
+.logo {
+font-size: 24px;
+font-weight: bold;
+color: #ffffff;
+&:hover {
+opacity: 0.8;
+}
+}
+.nav {
+display: flex;
+gap: $spacing;
+list-style: none;
+&-item {
+cursor: pointer;
+&:hover {
+color: darken($primary-color, 10%);
+}
+a {
+text-decoration: none;
+color: inherit;
+padding: 8px 16px;
+border-radius: 4px;
+&:hover {
+background-color: rgba(255, 255, 255, 0.1);
+}
+}
+}
+}
+}
+&-content {
+padding: $spacing * 3;
+max-width: 1200px;
+margin: 0 auto;
+.section {
+margin-bottom: $spacing * 2;
+&-title {
+font-size: 32px;
+color: $secondary-color;
+margin-bottom: $spacing;
+}
+&-description {
+color: $text-color;
+line-height: 1.6;
+}
+}
+}
+&-footer {
+background: $secondary-color;
+color: #ffffff;
+padding: $spacing * 2;
+text-align: center;
+}
+}
+@mixin flex-center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.centered-box {
+@include flex-center;
+height: 200px;
+background: lighten($primary-color, 40%);
+}
